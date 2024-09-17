@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dynamic Resume Builder</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Sofadi+One&family=Space+Grotesk:wght@300..700&display=swap');
+        h1{   
+  font-family: "Sofadi One", system-ui;
+        }
+        label,legend,#resume-display{
+            font-family: "Space Grotesk", sans-serif;
+        }
+        </style>
+</head>
+<body>
+  <h1>Dynamic Resume Builder</h1>
+        <form id="resume-form">
+            <fieldset>
+                <legend>Personal Information</legend>
+                    <label for="Name">Name:</label> <br>
+                    <input id="Name" required type="text" size="80" placeholder="Enter Your Name"  style="box-sizing: border-box;  margin-left: 100px; padding:10px; border-radius: 5px;">
+                    <label for="fathername">Father Name:</label>
+                    <input id="fathername" required type="text" size="80" placeholder="Enter Your Father Name "  style="box-sizing: border-box; margin-top: 10px; margin-left: 100px; padding:10px; border-radius: 5px;">
+                    <label for="phonenno">Phone Number:</label>
+                    <input id="phno" required type="number" maxlength="11" size="80" placeholder="Enter Your Ph-Number"  style="box-sizing: border-box; margin-top: 10px; margin-left: 100px; padding:10px; border-radius: 5px;">
+                    <label for="email">Email:</label>
+                    <input id="email" required="@" type="email" size="80" placeholder="Enter Your Email"  style="box-sizing: border-box; margin-top: 10px; margin-left: 100px; padding:10px; border-radius: 5px;">
+                    <label for="Address">Address:</label>
+                    <input id="Address" required="@" type="text" size="80" placeholder="Enter Your Address"  style="box-sizing: border-box; margin-top: 10px; margin-left: 100px; padding:10px; border-radius: 5px; margin-bottom: 20px;"> 
+        </fieldset>
+        <fieldset>
+            <legend>Education</legend>
+            <label for="Eduction">Education:</label> <br>
+            <textarea name="Education"  id="Education" rows="6" cols="80"  placeholder="Enter your Education" ></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="Skills">Skills:</label> <br>
+            <textarea name="Skills"  id="Skills" rows="6" cols="80"  placeholder="Enter your Skills" ></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Work Experience</legend>
+            <label for="Work Experience">Work Experience:</label> <br>
+            <textarea name="WorkExperience"  id="WorkExperience" rows="6" cols="80"  placeholder="Enter your Work Experience" ></textarea>
+        </fieldset>
+        <button  id="submi" type="submit"><b>Generate a Resume</b></button>
+    </form> 
+   <br>
+    <div id="resume-display">
+
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
