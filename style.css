@@ -114,7 +114,8 @@ textarea {
 }
 @media screen and (max-width:478px) {
     body{
-        margin:10px;
+        margin-left:10px;
+        margin-right:10px;
     }
     #resume-form{
         background-color: #D9AFD9;
